@@ -1,0 +1,107 @@
+========================= 
+INICIO: vie. 04/07/2025 - 15:13:31.26 
+Hostname: PVC230 
+Tipo de PC detectado: Comanda 
+No se pudo obtener IP local de adaptador activo. Usando fallback: 10.10.2 
+Usuario estándar detectado: TPV04 
+Probando conectividad con servidores... 
+Probando con servidores default... 
+Servidor seleccionado: 10.10.2.61 
+ERROR: No se puede acceder a \\10.10.2.61\SVI$\SHR8 
+FIN: vie. 04/07/2025 - 15:13:42.30 
+========================= 
+INICIO: vie. 04/07/2025 - 15:18:00.70 
+Hostname: PVC230 
+Tipo de PC detectado: Comanda 
+Detectando IP local... 
+========================= 
+INICIO: vie. 04/07/2025 - 15:19:03.66 
+Hostname: PVC230 
+Tipo de PC detectado: Comanda 
+Detectando IP local... 
+========================= 
+INICIO: vie. 04/07/2025 - 15:23:17.76 
+Hostname: PVC230 
+Tipo de PC detectado: Comanda 
+Detectando IP local... 
+IP detectada: 10.10.147.7 (Subred: 10.10.147) 
+Subred final: 10.10.147 
+Usuario estándar detectado: TPV04 
+Probando conectividad con servidores... 
+Probando con servidores default... 
+Servidor seleccionado: 10.10.2.61 
+ERROR: No se puede acceder a \\10.10.2.61\SVI$\SHR8 
+FIN: vie. 04/07/2025 - 15:23:33.45 
+========================= 
+INICIO: vie. 04/07/2025 - 15:24:49.75 
+Hostname: PVC230 
+Tipo de PC detectado: Comanda 
+Detectando IP local... 
+IP detectada: 10.10.147.7 (Subred: 10.10.147) 
+Subred final: 10.10.147 
+Usuario estándar detectado: TPV04 
+Probando conectividad con servidores... 
+Probando con servidores default... 
+Servidor seleccionado: 10.10.2.61 
+ERROR: No se puede acceder a \\10.10.2.61\SVI$\SHR8 
+FIN: vie. 04/07/2025 - 15:25:05.31 
+
+Intento no válido de llamar una etiqueta por lotes fuera de un archivo
+de script por lotes.
+Intento no válido de llamar una etiqueta por lotes fuera de un archivo
+de script por lotes.
+
+
+========================= 
+INICIO: vie. 04/07/2025 - 15:33:04.94 
+Hostname: PVC230 
+Tipo de PC detectado: Comanda 
+Detectando IP local... 
+IP detectada: 10.10.147.7 (Subred: 10.10.147) 
+Subred final: 10.10.147 
+Usuario estándar detectado: TPV04 
+Probando conectividad con servidores... 
+Probando servidor: 10.10.147.61 
+Ping falló a 10.10.147.61 
+Probando servidor: 10.10.147.31 
+Ping exitoso a 10.10.147.31 
+No se puede acceder a \\10.10.147.31\SVI$ 
+Probando con servidores default... 
+Probando servidor default: 10.10.2.61 
+Ping exitoso a 10.10.2.61 
+No se puede acceder a \\10.10.2.61\SVI$ 
+Probando servidor default: 10.10.2.31 
+Ping falló a 10.10.2.31 
+ERROR: Ningún servidor disponible. Abortando. 
+Detalles de diagnóstico: 
+- Subred detectada: 10.10.147 
+- Servidores probados: 10.10.147.61, 10.10.147.31, 10.10.2.61, 10.10.2.31 
+FIN: vie. 04/07/2025 - 15:33:14.34 
+========================= 
+INICIO: vie. 04/07/2025 - 15:47:35.02 
+Hostname: PVC230 
+Tipo de PC detectado: Comanda 
+Detectando IP local... 
+IP detectada: 10.10.147.7 (Subred: 10.10.147) 
+Subred final: 10.10.147 
+Usuario estándar detectado: TPV04 
+Probando conectividad con servidores... 
+Probando servidor: 10.10.147.61 
+Ping exitoso a 10.10.147.61 - Servidor disponible 
+Servidor seleccionado: 10.10.147.61 
+ERROR: No se puede acceder a \\10.10.147.61\SVI$\SHR8 
+Probando crear conexión con credenciales... 
+ERROR CRÍTICO: Carpeta SHR8 no existe en servidor 
+FIN: vie. 04/07/2025 - 15:47:41.85 
+========================= 
+INICIO: vie. 04/07/2025 - 16:03:31.87 
+Hostname: PVC230 
+Tipo de PC detectado: Comanda 
+Detectando IP local... 
+IP detectada: 10.10.147.7 (Subred: 10.10.147) 
+Subred final: 10.10.147 
+Usuario estándar detectado: TPV04 
+Usuario actual: pvc230\soportecnico 
+Contexto: Usuario local detectado 
+Probando conectividad con servidores... 
+Probando servidor:  
