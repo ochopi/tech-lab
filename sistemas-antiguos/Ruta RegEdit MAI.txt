@@ -3,4 +3,4 @@
 # Caso en que fue aplicado: ---
 # Estado del archivo: ---
 
-Equipo\HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\VASPORT\MAI
+Equipo\HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\VSP\MAI

@@ -4,7 +4,8 @@
 # Estado del archivo: ---
 
 EJECUTAR POWERSHELL COMO ADMINISTRADOR
+Add-Computer -DomainName "DOMINIO.TLD" -Credential "USUARIO"
 
-Add-Computer -DomainName "grupovasport.local" -Credential "soporte"
+Add-Computer -DomainName "midominio.local" -Credential "soporte"
 
 

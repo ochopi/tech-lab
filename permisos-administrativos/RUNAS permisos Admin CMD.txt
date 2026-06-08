@@ -3,9 +3,9 @@
 # Caso en que fue aplicado: ---
 # Estado del archivo: ---
 
-runas.exe /user:SOPORTECNICO /savedcred
+runas.exe /user:USUARIO /savedcred "RUTA\AL\PROGRAMA.exe"
 
-C:\Windows\System32\runas.exe /user:SOPORTECNICO /savedcred "C:\Program Files (x86)\NetSetMan Pro\netsetman.exe"
+C:\Windows\System32\runas.exe /user:SOPORTE /savedcred "C:\Windows\System32\cmd.exe"
 
 
 

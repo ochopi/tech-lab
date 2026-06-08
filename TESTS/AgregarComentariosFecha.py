@@ -1,7 +1,10 @@
 # Fecha Ultima Modificacion Realizada: 2025-06-30
 # Fecha Último uso confirmado: 2025-06-30
-# Caso en que fue aplicado: Agregar comentarios con fecha de modificación a archivos de este repositorio
-# Estado del archivo: En general bien, pero los archivos .reg los daño, agregando espacios entre cada letra. Se modifico para aplicar una validacion y codificar los .reg en UTF-16
+# Caso en que fue aplicado: 
+# Agregar comentarios con fecha de modificación a archivos de este repositorio
+
+# Estado del archivo: OK
+# Se modifico para aplicar una validacion y codificar los .reg en UTF-16 ya que al principio lo hacia en UTF-8 y no se estaba haciendo correctamente
 
 from pathlib import Path
 import os

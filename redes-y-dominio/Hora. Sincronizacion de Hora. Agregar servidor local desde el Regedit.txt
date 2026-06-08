@@ -13,7 +13,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\DateTime\Servers
 4 - Agregar una nueva clave (Clic Derecho > Nuevo > Valor de Cadena)
 5 - Nombrarla con el numero correlativo siguiente (ejemplo 3, 4, 5, etc)
 6 - Modificar el valor de la nueva clave (Clic Derecho > Modificar)
-7 - En "Informacion del Valor" escribir el nombre del servidor (DCB062.grupovasport.local)
+7 - En "Informacion del Valor" escribir el nombre del servidor (DCB001.dominio.local)
 8 - Abrir "Fecha y Hora" (Win + R > timedate.cpl)
 9 - Ir a la pestaa "Hora de Internet"
 10 - Activar la casilla Actualizar Hora de Internet

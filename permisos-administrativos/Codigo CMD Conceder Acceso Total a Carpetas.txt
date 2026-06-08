@@ -6,4 +6,5 @@
 icacls "C:\folder" /grant USUARIO:(OI)(CI)F /T
 
 EJEMPLO:
-icacls "C:\Program Files (x86)\Microsoft Dynamics NAV\110\RoleTailored Client\Add-ins\ITVASPORT" /grant Todos:(OI)(CI)F /T
+icacls "C:\Users\Usuario\Documents\Folder" /grant Todos:(OI)(CI)F /T
+icacls "C:\Users\Usuario\Documents\Folder" /grant Everyone:(OI)(CI)F /T
