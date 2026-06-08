@@ -40,7 +40,7 @@ desktop					- Abre el Escritorio
 desde CMD
 
 runas /noprofile /user:Administrator cmd
-runas /noprofile /user:grupovasport.local\SOPORTE cmd
+runas /noprofile /user:dominio.local\USUARIO cmd
 https://www.1000tipsinformaticos.com/2016/11/existe-un-equivalente-de-sudo-en-windows.html
 
 
