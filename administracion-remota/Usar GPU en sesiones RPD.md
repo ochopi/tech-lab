@@ -1,15 +1,17 @@
 # Usar GPU en sesiones RDP
 
 ## Problema:
+
 El equipo cuenta con una GPU dedicada (Nvidia GeForce GT 710) la cual entra en uso al estar fisicamente frente a la PC, usando los 2 monitores, conectados fisicamente a esa GPU.
 
 Pero al conectarse remotamente por RDP, la sesion usa CPU.
 
 Lo cual normalmente no seria un inconveniente pero si, por ejemplo, como yo, se tiene un Live Wallpaper activo, eso representa una enorme carga para el CPU (un i7-6700 @ 3.40GHz)
 
-## Solucion
+## Solución:
 
-Abrir el `Editor de directivas de grupo local`, dentro de `"Directiva del Equipo Local"` Navegar hasta:
+Abrir el `Editor de directivas de grupo local`, dentro de `"Directiva del Equipo Local"` Navegar y habilitar estas 2 opciones:
+
 ```bash
 Computer Configuration
  └ Administrative Templates
