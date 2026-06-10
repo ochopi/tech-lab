@@ -1,0 +1,9 @@
+> Abrir Internet Explorer
+> Opciones
+> Opciones de Internet
+> Programas
+> Administrar Complementos
+> Mostrar: 
+> Todos los Complementos
+> Deshabilitar el complemento de Adobe PDF Reader
+> Cerrar Plataforma de AKI y volver a ingresar

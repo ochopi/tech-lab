@@ -1,0 +1,1 @@
+robocopy "Desktop\otros" "D:\BKs\pascual.romero\Desktop\otros" /E /DCOPY:T /J /R:0 /ipg:500

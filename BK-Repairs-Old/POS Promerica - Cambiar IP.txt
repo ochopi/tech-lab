@@ -1,0 +1,15 @@
+Configuraciones IP - POS PROMERICA
+
+> Menu
+> Menu Principal
+> Configuracion
+> Acceso Supervisor
+> Clave (0000)
+> Parametros IP
+> Local
+> DHCP? No=CANCELAR
+    IP: 10.10.xxx.50
+    Mask: 255.255.255.0
+    Gateway: 10.10.xxx.1
+    DNS: 10.10.xxx.100  ó  8.8.8.8
+> ENTER

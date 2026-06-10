@@ -1,0 +1,14 @@
+Cambiar IP - POS AGRICOLA
+
+> Menu
+> Menu Principal
+> Configuraciones
+> Acceso Supervisor
+> Clave de Acceso: (729500)
+> Parametros IP
+> Local
+    IP: 10.10.xxx.51
+    Mask: 255.255.255.0
+    Gateway: 10.10.xxx.1
+    DNS: 10.10.xxx.100  o  8.8.8.8
+> Aceptar

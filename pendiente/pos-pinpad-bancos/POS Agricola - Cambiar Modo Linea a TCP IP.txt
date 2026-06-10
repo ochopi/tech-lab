@@ -1,0 +1,10 @@
+Cambiar de Modo Linea a Modo TCP IP - POS AGRICOLA
+
+> Menu
+> Menu Principal
+> Configuraciones
+> Acceso Operador
+> Clave de Acceso: (1234)
+  SDLC es LINEA
+  TCP es IP
+  "Modo SDLC activo"   Cambiar a TCP=ENTER

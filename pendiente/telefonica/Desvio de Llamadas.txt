@@ -1,0 +1,15 @@
+El código que tienes que introducir en tu dispositivo móvil para completar el desvío de llamadas será el siguiente: **XX*Número de teléfono#.
+
+61: La llamada se desviará cuando no contestes al teléfono
+62: Si el teléfono está apagado se desviará la llamada
+67: Se desviará las llamadas si el teléfono está ocupado
+21: Desviará todas las llamadas
+
+
+
+Desactivar el desvío de llamadas es igual de sencillo que activarle, a continuación te mostraremos los códigos para que puedas quitar la redirección de llamadas de un teléfono a otro.
+
+Con la opción de desviar la llamada cuando no contestes marcar ##61# y pulsar llamar
+Si se desvían las llamadas cuando el teléfono está apagado: ##62# y pulsar llamar
+Desviar las llamadas cuando la línea está ocupada: ##67# y pulsar llamar
+Si has elegido la opción de desviar todas las llamadas: ##21# y pulsa llamar

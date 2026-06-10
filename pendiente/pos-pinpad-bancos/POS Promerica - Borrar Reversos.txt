@@ -1,0 +1,9 @@
+Borrar Reversos - POS PROMERICA
+
+> Menu
+> [1] Menu Principal
+> [7] Administrativas
+> [1] Acceso Operador
+> [ ] Clave de Acceso: (222222)
+> [1] Borrar Reversos
+> [1] Agente

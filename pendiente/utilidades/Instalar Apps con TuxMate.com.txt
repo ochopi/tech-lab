@@ -1,0 +1,5 @@
+https://tuxmate.com/
+
+TuxMate es el Ninite para Linux
+Permite desde el sitio web seleccionar la distro y las aplicaciones que se quieren instalar
+Y hace una instalacion bulk masiva

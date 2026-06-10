@@ -1,0 +1,10 @@
+- Lo primero de todo será inicial normalmente el proceso de instalación de Windows 11 Home
+- Una vez lleguemos al paso «Vamos a conectarte a una red», presionaremos de manera simultánea las teclas Shift + F10 en nuestro teclado
+- Se abrirá una ventana del símbolo del sistema
+
+> Escribiremos «taskmgr» y Enter
+> Mas Detalles 
+> Buscamos un proceso llamado «Flujo de conexión de red»
+> «Finalizar tarea»
+
+- Tras esto, tan solo tendremos que regresar a la Configuración de Windows 11 y continuar el proceso normal para agregar una cuenta local

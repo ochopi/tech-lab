@@ -1,0 +1,9 @@
+Cambiar de Modo Linea a Modo TCP/IP - POS PROMERICA
+
+> Menu
+> Menu Principal
+> Configuracion
+> Acceso Operador
+> Clave (222222)
+> Modo Conexion
+> "Modo Actual: Linea"    Cambiar a TCP=ENTER

@@ -1,0 +1,8 @@
+Eliminar la cola de impresión con el comando CMD 
+
+1 - Abrir CMD
+2 - net stop spooler
+3 - Navear hasta "C:\WINDOWS\System32\spool\PRINTERS"
+4 - Eliminar todos los archivos temporales que estan en esa carpeta
+5 - net start spooler
+6 - Listo!!

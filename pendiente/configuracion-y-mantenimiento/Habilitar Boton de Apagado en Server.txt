@@ -1,0 +1,6 @@
+> Inicio
+  > Directiva de Seguridad Local
+    > Directivas Locales
+      > Opciones de Seguridad
+        > Permitir Apagado sin tener que iniciar sesion: 
+            >HABILITADO

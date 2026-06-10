@@ -1,0 +1,7 @@
+>Regedit
+
+HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\ProfileList
+
+>Eliminar la carpeta que termine en  .bak
+
+>Reiniciar

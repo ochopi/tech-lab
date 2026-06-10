@@ -1,0 +1,4 @@
+Equipo\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System
+
+ConsentPromptBehaviorUser 0
+ConsentPromptBehaviorUser 1

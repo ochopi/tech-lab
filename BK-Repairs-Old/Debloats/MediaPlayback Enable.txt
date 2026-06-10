@@ -1,0 +1,4 @@
+# Comando Powershell para volver a habilitar las funciones de Reproduccion
+# De Windows Media Player en caso de que hayan sido deshabilitadas.
+
+Enable-WindowsOptionalFeature -Online -FeatureName "MediaPlayback" -All

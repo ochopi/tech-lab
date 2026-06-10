@@ -1,0 +1,112 @@
+# COMANDO PARA RESPALDAR LA BASE DE DATOS DE IMMICH (pgdata)
+
+## 1. Apaga Immich en la laptop (obligatorio)
+## Desde la carpeta del compose:
+'''
+docker compose down
+'''
+
+## Asegúrate que no haya contenedores corriendo con:
+'''
+docker ps
+'''
+
+## Revisa los volumenes que hay en Docker con:
+'''
+docker volume ls
+'''
+
+## 2. Haz el backup del volumen immich_pgdata
+
+## Desde cualquier terminal (CMD):
+'''
+docker run --rm -v immich_pgdata:/var/lib/postgresql/data -v %CD%:/backup alpine tar czf /backup/immich-pgdata.tar.gz -C /var/lib/postgresql/data .
+'''
+ó
+'''
+docker run --rm ^
+  -v immich_pgdata:/var/lib/postgresql/data ^
+  -v %CD%:/backup ^
+  alpine ^
+  tar czf /backup/immich-pgdata.tar.gz -C /var/lib/postgresql/data .
+'''
+
+Esto lo que hace es:
+– Monta el volumen de Postgres
+– Lo empaqueta entero
+– Crea immich-pgdata.tar.gz en el directorio actual
+– No borra nada
+– No modifica nada
+
+Cuando termine:
+– Verifica que el archivo existe
+– Verifica que pesa varios MB (o más, según tu DB)
+
+
+## 3. Ahora vamos a restaurar la Base de Datos.
+
+## Copia el archivo "immich-pgdata.tar.gz" creado en el paso anterior
+## a una ruta simple, por ejemplo:
+D:\backup\immich-pgdata.tar.gz
+
+# 3.1 Crear el volumen de la DB en el destino:
+'''
+docker volume create immich_pgdata
+docker volume ls
+'''
+Debe aparecer immich_pgdata
+
+## 3.2 Restaurar la base de datos (ANTES del primer arranque)
+## Desde cualquier terminal (CMD):
+'''
+docker run --rm ^
+  -v immich_pgdata:/var/lib/postgresql/data ^
+  -v %CD%:/backup ^
+  alpine ^
+  tar xzf /backup/immich-pgdata.tar.gz -C /var/lib/postgresql/data
+'''
+
+## 4. COMPROBACION
+## 4.1: verifica que el volumen tiene datos
+## En CMD ejecuta esto:
+
+'''
+docker run --rm ^
+  -v immich_pgdata:/var/lib/postgresql/data ^
+  alpine ^
+  sh -c "ls -lah /var/lib/postgresql/data | more"
+'''
+
+Qué deberías ver:
+– carpetas como base, global, pg_wal
+– archivos como PG_VERSION, postgresql.conf, etc.
+– no debería estar vacío
+
+Si ves eso, el restore sí escribió dentro del volumen.
+
+## 4.2: sanity check del tamaño
+'''
+docker run --rm ^
+  -v immich_pgdata:/var/lib/postgresql/data ^
+  alpine ^
+  du -sh /var/lib/postgresql/data
+'''
+Compáralo mentalmente con el tamaño del .tar.gz.
+No tiene que ser idéntico, pero no debería ser ridículamente pequeño.
+
+
+## 5. arranca Immich (sin miedo)
+'''
+docker compose up -d
+'''
+
+## Abre Immich en el navegador y fíjate en esto:
+## localhost:2283
+
+– usuarios intactos
+– álbumes presentes
+– fotos “aparecen” (aunque falten thumbs, eso da igual)
+– no te pide crear usuario nuevo
+
+Si te pide crear usuario → la DB no fue restaurada correctamente
+Si entra normal → misión cumplida.

@@ -1,0 +1,48 @@
+# RESPALDAR PAQUETES INSTALADOS CON CHOCOLATEY O WINGET
+
+# CHOCOLATEY
+# Para exportar la lista de programas instalados se usa choco export
+# Esto genera un archivo XML llamado packages.config 
+'''
+choco export
+o
+choco export -o="'c:\temp\packages.config'" --include-version-numbers
+'''
+
+# Luego para importar o instalar los programas se usa
+# choco install
+'''
+choco install .\packages.config
+o
+choco install 'c:\temp\packages.config'
+'''
+
+
+# WINGET
+# Para exportar la lista de programas instalados con winget se usa
+# winget export [-o] <output> [<options>]
+# winget export -o NombreArchivo.json
+'''
+winget export -o winget-packages.json
+
+'''
+
+# Luego hay que hacer la importacion
+# winget import [-i] <import-file> [<options>]
+# winget import -i NombreArchivo.json
+'''
+winget import -i winget-packages.json
+
+'''
+
+
+# PARA DESINSTALAR CON CHOCOLATEY INCLUYENDO DEPENDENCIAS SUELTAS:
+choco uninstall handbrake --remove-dependencies
+
+
+
+# COMANDOS EXTRA CON CHOCOLATEY
+choco info handbrake
+choco install handbrake --ignore-dependencies
+choco install handbrake --what-if
+choco upgrade all

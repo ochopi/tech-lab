@@ -1,0 +1,25 @@
+TL;NR
+> Shift + Clic Derecho
+> Ejecutar el Administrador de Tareas como "otro usuario"
+> Usuario: MicrosoftAccount\correo@outlook.com
+> Password: Contraseña de la cuenta de Outlook.
+
+LISTO!!!
+
+Existe un Error cuando se crea una cuenta de usuario Local en Windows 11, con permisos de administrador, 
+y luego se vincula con una cuenta de Microsoft, y se crea un PIN de Windows Hello.
+
+En algunos programas administrativos como el Programador de Tareas, no permite crear tareas o modificar las ya existentes pues no reconoce correctamente el usuario y la contraseña, pues al parecer hace una mezcla entre el usuario local, la cuenta de usuario de Microsoft, la contraseña local (inexistente), la contraseña de la cuenta de Microsoft, y el PIN de Windows Hello.
+
+La solución al parecer es forzar la apertura del Programador de Tareas con usuario y contraseña de Microsoft.
+
+No basta con dar > Clic Derecho > Ejecutar como Administrador.
+Es necesario buscar la ubicacion del Programador de Tareas o de un Acceso Directo al mismo, y en ese, dar
+> Shift + Clic Derecho
+> Ejecutar como "otro usuario"
+> Usuario*: MicrosoftAccount\tucorreo@outlook.com
+> Password: TuContraseña de la cuenta de Outlook.
+
+*El usuario al parecer también funciona con ".\tucorreo@outlook.com"
+
+Eso fuerza al Programador de Tareas, o al programa que tu quieras, a abrirse específicamente con el correo como usuario y con la contraseña de ese correo como contraseña, y, a la hora de volver a pedir la contraseña luego de crear o modificar una tarea, ya reconoce correctamente la contraseña.

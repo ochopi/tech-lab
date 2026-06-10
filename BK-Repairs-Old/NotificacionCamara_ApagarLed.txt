@@ -1,0 +1,5 @@
+Win+R
+>regedit
+>Equipo\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\OEM\Device\Capture
+>NoPhysicalCameraLED
+>1

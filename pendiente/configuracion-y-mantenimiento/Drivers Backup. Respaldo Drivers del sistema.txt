@@ -1,0 +1,64 @@
+# REALIZAR RESPALDO DE DRIVERS DE WINDOWS EN UNA USB
+
+# METODO 1:  DISM
+    # RESPALDO:
+> Conectar una USB al PC antes de formatear. (E:)
+> Crear una carpeta donde se guardaran los drivers. (E:\DriversBackupPC\)
+> Abrir una terminal CMD con permisos de Administrador
+> Escribir:
+dism /online /export-driver /destination:E:\DriversBackupPC
+> Esperar a que termine. El respaldo estará listo.
+
+    # RESTAURANDO LOS DRIVERS:
+> En el nuevo sistema:
+> Abrir el Administrador de Dispositivos (hdwwiz.cpl)
+> Seleccionamos el nombre de nuestro equipo
+ > Clic Derecho
+  > Agregar Controladores > Explorar
+   > Buscamos la Carpeta en el USB donde Guardamos los drivers:
+     (E:\DriversBackupPC\)
+     > Dejamos Marcado "Incluir subcarpetas"
+      > Damos Clic en ACEPTAR y comenzaran a instalarse uno tras otro.
+> LISTO
+
+
+
+# METODO 2:  POWERSHELL
+    # RESPALDO:
+> Conectar una USB al PC antes de formatear. (E:)
+> Crear una carpeta donde se guardaran los drivers. (E:\DriversBackupPC\)
+> Abrir una terminal POWERSHELL con permisos de Administrador
+> Escribir:
+Export-WindowsDriver -Online -Destination E:\DriversBackupPC
+> Esperar a que termine. El respaldo estará listo.
+
+    # RESTAURANDO LOS DRIVERS:
+> En el nuevo sistema:
+> Abrir una terminal POWERSHELL con permisos de Administrador
+> Escribir:
+$driverFolder = "E:\DriversBackupPC" 
+Get-ChildItem -Path $driverFolder -Recurse -Filter "*.inf" | ForEach-Object {
+pnputil /add-driver $_.FullName /install
+}
+> LISTO
+
+
+
+# METODO 3:  COPY-PASTE
+    # RESPALDO:
+> Conectar una USB al PC antes de formatear. (E:)
+> Buscar y copiar la siguiente carpeta en el PC:
+C:\Windows\System32\DriverStore\FileRepository\
+> Pegarla en el USB
+> Listo
+
+    # RESTAURANDO LOS DRIVERS:
+> En el nuevo sistema:
+> Abrir el Administrador de Dispositivos (hdwwiz.cpl)
+> Seleccionamos el nombre del dispositivo que deseamos agregar el driver
+ > Clic Derecho
+  > Actualizar Controlador > Explorar
+   > Buscamos la Carpeta en el USB donde esta el driver de ese dispositivo especifico
+    > Damos Clic en ACEPTAR y comenzaran a instalarse solo ese unico driver.
+> Repetir para todos los drivers que sea necesario
+> LISTO

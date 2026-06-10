@@ -1,0 +1,1 @@
+vrdisable -console -no-browser

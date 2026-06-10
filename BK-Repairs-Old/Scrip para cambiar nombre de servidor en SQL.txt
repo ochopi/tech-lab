@@ -1,0 +1,13 @@
+select* from sys.servers 
+
+sp_dropserver 'SFLB000', 'droplogins'
+go
+
+--Agregamos el nuevo nombre de la instancia local.
+sp_addserver 'SVFLB000', 'local'
+go
+
+--posteriormente reiniciamos el mssqlserver y listo, para comprobarlo revisamos en :
+
+select* from sys.servers
+select @@SERVERNAME

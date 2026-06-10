@@ -1,0 +1,32 @@
+# Script de KWin para Cerrar todas las Ventanas Abiertas
+# Copiar la carpeta closeall a ~/.local/share/kwin/scripts/
+# Alternativa, comprimir la carpeta closeall en zip
+# Renombrarla a closeall.kwinscript
+# Importarla desde Preferencias del Sistema - Gestion de Ventanas - Guiones de Kwin - Instalar desde archivo
+
+KWin no “ejecuta scripts sueltos”. Carga plugins.
+Un script de KWin no es un .sh, es un plugin JavaScript con metadata, y KWin solo escanea rutas fijas.
+
+Las rutas válidas son:
+
+~/.local/share/kwin/scripts/ (usuario)
+/usr/share/kwin/scripts/ (sistema)
+
+Nada más. No hay opción de configurar rutas extra. No hay symlink mágico. No hay variable de entorno escondida.
+
+Dentro de esa ruta, cada script es un plugin, por eso:
+
+~/.local/share/kwin/scripts/
+└── closeall/
+    ├── metadata.json
+    └── contents/
+        └── code.js
+
+
+Ese layout no es decorativo:
+
+metadata.json → identifica el plugin
+
+contents/code.js → código que KWin carga
+
+El nombre de la carpeta es el ID del plugin

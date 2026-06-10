@@ -1,0 +1,40 @@
+PASOS PARA REPARAR LA PARTICION DE ARRANQUE EFI DE UN DISCO GPT 
+
+1. Asignar una Letra de Unidad a la Partición EFI: 
+Selecciona la partición EFI (generalmente es de unos 100-300 MB) con select partition Y  
+
+    > DISKPART 
+        > list disk 
+        > select disk #X  
+        > select partition #Y  
+        > assign letter=Z 
+    > EXIT 
+
+(reemplaza #X con el número del disco donde estan las particiones de arranque y de Windows). 
+(reemplaza #Y con el número de la partición EFI generalmente es la de 100MB). 
+
+
+2. Reparar los Archivos EFI: 
+Este comando copia los archivos de arranque necesarios desde la partición del sistema operativo (C:\Windows) a la partición EFI (Z:). 
+
+    > cd /d Z:\EFI\Microsoft\Boot\ 
+    > ren BCD BCD.bak 
+    > bcdboot C:\Windows /l en-us /s Z: /f UEFI 
+
+
+3. Borrar la Letra de Unidad (Asignada en el Paso 1) 
+Esto se hace porque de lo contrario, al finalizar el proceso, en windows nos aparecera la particion de 100MB de arranque, lo cual no es lo ideal. 
+
+    > DISKPART 
+        > list disk 
+        > select disk #X  
+        > select partition #Y  
+        > remove letter=Z 
+    > EXIT 
+
+(reemplaza #X con el número del disco donde estan las particiones de arranque y de Windows). 
+(reemplaza #Y con el número de la partición EFI generalmente es la de 100MB). 
+
+
+4. Salir y Reiniciar: 
+Después de ejecutar estos comandos, cierra el CMD, reinicia la computadora y verifica si Windows arranca correctamente. 

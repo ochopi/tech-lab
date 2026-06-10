@@ -1,0 +1,15 @@
+1 - Abir el Simbolo del Sistema con Permisos de Administrador
+2 - Escribir powershell (y pulsa Intro en tu teclado). 
+3 - Luego escribe el comando:
+
+Get-AppXPackage -AllUsers | Foreach {Add-AppxPackage -DisableDevelopmentMode -Register "$($_.InstallLocation)\AppXManifest.xml"}
+
+(y pulsa Intro)
+
+Espera a que se complete el chequeo. Lo sabes porque sale otra vez el cursor donde escribiste antes el comando. 
+
+IMPORTANTE: si aparecen errores en rojo no les hagas caso.
+
+
+FUENTE:
+https://www.aboutespanol.com/solucion-si-la-barra-de-buscar-de-windows-10-no-funciona-3507973

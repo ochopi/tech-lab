@@ -1,0 +1,7 @@
+mklink /D "%appdata%\MiSupuestaUbicacion" "D:\AppData\MiUbicacionReal"
+
+
+mklink → crea enlaces simbólicos (symlinks).
+/D    → indica que es un vínculo simbólico a un directorio.
+"%appdata%\MiSupuestaUbicacion" → es el destino aparente (lo que verá el programa).
+"D:\Appdata\MiUbicacionReal"    → es el directorio real donde se guardará todo.

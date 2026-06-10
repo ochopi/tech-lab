@@ -1,0 +1,13 @@
+RESET CANON 2100 - ERROR 5B00
+
+- Apagar la Impresora
+- Presionar botón CANCELAR y sin dejar de presionarlo, mantener presionado el boton de POWER.
+- Ahora soltamos SOLO el botón cancelar (EL DE ENCENDIDO HAY QUE MANTENERLO PRESIONADO)
+- Presionar 5 veces el boton de CANCELAR y luego soltamos los dos botones.
+- Esperar a que la luz intermitente de Power quede fija encendida sin parpadear.
+- Volvemos a presionar 5 veces el boton de CANCELAR y luego presionamos una vez el boton de POWER
+ [Eso habra Reseteado el contador e imprimira una hoja indicando que el contador esta en cero]
+- Ahora presionamos 3 veces el boton de Cancelar + una vez el boton de Power
+ [Eso imprimira otra pagina]
+- El proceso ha terminado. Ahora solo hay que apagar el impresor.
+- Esperar a que se apague completamente. Encenderlo nuevamente y ya esta listo para seguir usandolo.

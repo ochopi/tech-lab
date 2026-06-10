@@ -1,0 +1,11 @@
+{
+  "KPlugin": {
+    "Id": "closeall",
+    "Name": "Close All Windows",
+    "Description": "Closes all open windows",
+    "Version": "1.0"
+  },
+  "KPackageStructure": "KWin/Script",
+  "X-Plasma-API": "javascript",
+  "X-Plasma-MainScript": "code/main.js"
+}

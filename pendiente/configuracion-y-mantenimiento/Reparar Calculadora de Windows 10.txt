@@ -1,0 +1,23 @@
+Reparar Calculadora de Windows dañada
+
+Restablecer la aplicación de la calculadora
+- Windows + I para abrir la Configuración.
+- Aplicaciones > Aplicaciones y características.
+- Encuentra la aplicación Calculadora y haz clic en ella.
+- Opciones avanzadas
+- Restablecer
+
+En caso de que no funcione, intente desinstalar la calculadora, desde el mismo menu anterior.
+El paquete mas reciente lo puede encontrar en el siguiente sitio web:
+
+https://store.rg-adguard.net/
+
+En ese sitio solo se pega la URL de Windows Store de la Aplicacion Deseada
+
+
+
+URL Windows Store Calculadora de Windows 10
+https://apps.microsoft.com/store/detail/calculadora-de-windows/9WZDNCRFHVN5
+
+URL Windows Store Calculadora de Windows 8
+https://apps.microsoft.com/store/detail/calculadora-x8/9WZDNCRFJ305

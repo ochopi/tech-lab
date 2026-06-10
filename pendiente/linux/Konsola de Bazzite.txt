@@ -1,0 +1,3 @@
+Bazzite no trae por defecto konsole.
+En su lugar usa "ptyxis"
+https://flathub.org/es/apps/app.devsuite.Ptyxis
