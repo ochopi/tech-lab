@@ -1,4 +1,0 @@
-> PowerShell >
-get-ciminstance win32_winsat
-
-Este comando muestra una nota o calificación de tu equipo
