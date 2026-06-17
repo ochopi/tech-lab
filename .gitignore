@@ -1,8 +1,48 @@
-# No ignores archivos útiles
-# (No se excluyen .url, .lnk, .pdf ni .docx)
-
-# Ignorar archivos de sistema o temporales
-*.tmp
-*.bak
-Thumbs.db
+# ── Sistema operativo ───
 .DS_Store
+Thumbs.db
+desktop.ini
+$RECYCLE.BIN/
+
+# ── Editores y IDEs ───
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# ── Secretos y credenciales ───
+# (La regla más importante: )captura casi cualquier archivo de secretos)
+*.env
+.env*
+**/.env
+*.secret
+secrets.*
+*password*
+*passwd*
+*token*
+*apikey*
+*api_key*
+id_rsa
+id_ed25519
+*.pem
+*.key
+*.p12
+
+# ── Backups y archivos temporales ───
+*.bak
+*.tmp
+*.log
+*.orig
+
+# ── Archivos comprimidos (para no subir dumps/backups grandes) ───
+*.tar
+*.tar.gz
+*.zip
+*.gz
+*.sql.gz
+
+# ── Carpetas de datos sensibles ───
+secrets/
+private/
+credentials/
