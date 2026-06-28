@@ -1,0 +1,3 @@
+shell:AppsFolder
+
+Applications.{4234D49B-0245-4DF3-B780-3893943456E1}
